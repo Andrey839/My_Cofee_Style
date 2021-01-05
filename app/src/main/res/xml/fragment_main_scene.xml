@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="600">
+        <KeyFrameSet></KeyFrameSet>
+        <OnClick motion:targetId="@+id/floatingActionButton" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            motion:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/textViewMacchiato"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            motion:layout_constraintBottom_toBottomOf="@id/macchiatoFAB"
+            motion:layout_constraintEnd_toEndOf="@id/macchiatoFAB" />
+        <Constraint
+            android:id="@+id/macchiatoFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            motion:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/textViewRaf"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            motion:layout_constraintBottom_toBottomOf="@id/rafFAB"
+            motion:layout_constraintEnd_toEndOf="@id/rafFAB" />
+        <Constraint
+            android:id="@+id/rafFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            motion:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/textViewLatte"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            motion:layout_constraintBottom_toBottomOf="@id/latteFAB"
+            motion:layout_constraintEnd_toEndOf="@id/latteFAB" />
+        <Constraint
+            android:id="@+id/latteFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            motion:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/textViewCappuccino"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            motion:layout_constraintBottom_toBottomOf="@id/cappuccinoFAB"
+            motion:layout_constraintEnd_toEndOf="@id/cappuccinoFAB" />
+        <Constraint
+            android:id="@+id/cappuccinoFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            motion:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/textViewAmericano"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            motion:layout_constraintBottom_toBottomOf="@id/americanoFAB"
+            motion:layout_constraintEnd_toEndOf="@id/americanoFAB" />
+        <Constraint
+            android:id="@+id/americanoFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            motion:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/textViewDoppio"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            motion:layout_constraintBottom_toBottomOf="@id/doppioFAB"
+            motion:layout_constraintEnd_toEndOf="@id/doppioFAB" />
+        <Constraint
+            android:id="@+id/doppioFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            motion:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/textViewEspresso"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            motion:layout_constraintBottom_toBottomOf="@id/espressoFAB"
+            motion:layout_constraintEnd_toEndOf="@id/espressoFAB" />
+        <Constraint
+            android:id="@+id/espressoFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            motion:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            motion:layout_constraintEnd_toEndOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:rotation="-144"
+            motion:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/macchiatoFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin"
+            motion:layout_constraintBottom_toTopOf="@id/floatingActionButton"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/rafFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin"
+            motion:layout_constraintBottom_toTopOf="@id/macchiatoFAB"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/latteFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin"
+            motion:layout_constraintBottom_toTopOf="@id/rafFAB"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/cappuccinoFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin"
+            motion:layout_constraintBottom_toTopOf="@id/latteFAB"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/americanoFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin"
+            motion:layout_constraintBottom_toTopOf="@id/cappuccinoFAB"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/doppioFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin"
+            motion:layout_constraintBottom_toTopOf="@id/americanoFAB"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/espressoFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin"
+            motion:layout_constraintBottom_toTopOf="@id/doppioFAB"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/textViewMacchiato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:alpha="1.0"
+            motion:layout_constraintBottom_toBottomOf="@id/macchiatoFAB"
+            motion:layout_constraintEnd_toStartOf="@id/macchiatoFAB" />
+        <Constraint
+            android:id="@+id/textViewRaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:alpha="1.0"
+            motion:layout_constraintBottom_toBottomOf="@id/rafFAB"
+            motion:layout_constraintEnd_toStartOf="@id/rafFAB" />
+        <Constraint
+            android:id="@+id/textViewLatte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:alpha="1.0"
+            motion:layout_constraintBottom_toBottomOf="@id/latteFAB"
+            motion:layout_constraintEnd_toStartOf="@id/latteFAB" />
+        <Constraint
+            android:id="@+id/textViewCappuccino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:alpha="1.0"
+            motion:layout_constraintBottom_toBottomOf="@id/cappuccinoFAB"
+            motion:layout_constraintEnd_toStartOf="@id/cappuccinoFAB" />
+        <Constraint
+            android:id="@+id/textViewAmericano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:alpha="1.0"
+            motion:layout_constraintBottom_toBottomOf="@id/americanoFAB"
+            motion:layout_constraintEnd_toStartOf="@id/americanoFAB" />
+        <Constraint
+            android:id="@+id/textViewDoppio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:alpha="1.0"
+            motion:layout_constraintBottom_toBottomOf="@id/doppioFAB"
+            motion:layout_constraintEnd_toStartOf="@id/doppioFAB" />
+        <Constraint
+            android:id="@+id/textViewEspresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:alpha="1.0"
+            motion:layout_constraintBottom_toBottomOf="@id/espressoFAB"
+            motion:layout_constraintEnd_toStartOf="@id/espressoFAB" />
+    </ConstraintSet>
+</MotionScene>

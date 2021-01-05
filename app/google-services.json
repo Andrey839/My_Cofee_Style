@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "988095426385",
+    "project_id": "my-cofe-style",
+    "storage_bucket": "my-cofe-style.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988095426385:android:379f8bf1420f253230ad70",
+        "android_client_info": {
+          "package_name": "com.myapp.mycoffeestyle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988095426385-p0mboccplc6mrjemd8evrcjiaiu5d4ec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myapp.mycoffeestyle",
+            "certificate_hash": "85167c5f924709c780e2dfe9934a90230ca2b13b"
+          }
+        },
+        {
+          "client_id": "988095426385-92de7mj54aboa93n403sm8hd84opgp17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwv8Os8E3zpZyR-GuFphOeVK-qAGUuzzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988095426385-92de7mj54aboa93n403sm8hd84opgp17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

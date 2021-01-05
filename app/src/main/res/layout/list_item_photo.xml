@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewRecycler"
+            type="com.myapp.mycoffeestyle.database.PhotoInDatabase" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="18dp"
+        style="@style/CardView.Light">
+
+        <LinearLayout
+            android:id="@+id/linerRecyclerPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/linerRecyclerPhoto"
+                app:layout_constraintTop_toTopOf="@id/linerRecyclerPhoto"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="18dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/photoCoffeeCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/photoCoffee"
+                        app:layout_constraintStart_toStartOf="@id/photoCoffeeCard"
+                        app:layout_constraintTop_toTopOf="@id/photoCoffeeCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:setPhoto="@{viewRecycler.photoUri}"/>
+
+                    <ImageView
+                        android:id="@+id/shared"
+                        app:layout_constraintEnd_toEndOf="@id/photoCoffee"
+                        app:layout_constraintTop_toTopOf="@id/photoCoffee"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginEnd="@dimen/margin"
+                        android:layout_width="@dimen/icon_size"
+                        android:layout_height="@dimen/icon_size"
+                        android:layout_marginTop="@dimen/margin"
+                        android:src="@drawable/ic_baseline_share_24" />
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="@dimen/icon_size"
+                        android:layout_height="@dimen/icon_size"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:layout_constraintEnd_toEndOf="@id/photoCoffee"
+                        app:layout_constraintBottom_toBottomOf="@id/photoCoffee"
+                        android:layout_marginEnd="@dimen/margin"
+                        android:layout_marginBottom="@dimen/margin"
+                        android:src="@drawable/ic_baseline_delete_outline_24_black" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/nameCoffee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="@dimen/size_tittle_name_coffee"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@{viewRecycler.typeCoffee}"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/iconData"
+                    app:layout_constraintStart_toStartOf="@id/constraintItem"
+                    app:layout_constraintTop_toTopOf="@id/constraintItem"
+                    android:layout_width="@dimen/icon_small_size"
+                    android:layout_height="@dimen/icon_small_size"
+                    android:src="@drawable/baseline_wysiwyg_black_18dp"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/dataCoffee"
+                    app:layout_constraintTop_toTopOf="@id/constraintItem"
+                    app:layout_constraintStart_toEndOf="@id/iconData"
+                    android:layout_marginStart="@dimen/margin_start_tittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_size_tittle"
+                    android:textColor="@color/purple_200"
+                    android:text="@{viewRecycler.dataTakePhoto}"/>
+
+                <ImageView
+                    android:id="@+id/place"
+                    app:layout_constraintStart_toStartOf="@id/constraintItem"
+                    app:layout_constraintTop_toBottomOf="@id/iconData"
+                    android:layout_width="@dimen/icon_small_size"
+                    android:layout_height="@dimen/icon_small_size"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_baseline_place_24"/>
+
+                <TextView
+                    android:id="@+id/placeText"
+                    app:layout_constraintStart_toEndOf="@id/place"
+                    app:layout_constraintTop_toBottomOf="@id/dataCoffee"
+                    android:layout_marginStart="@dimen/margin_start_tittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_size_tittle"
+                    android:textColor="@color/purple_200"
+                    android:layout_marginTop="4dp"
+                    android:text="@{viewRecycler.latitude+viewRecycler.longitude }"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.myapp.mycoffeestyle.ui.main.PageViewModel" />
+        <variable
+            name="nameCoffee"
+            type="com.myapp.mycoffeestyle.ui.main.PlaceholderFragment" />
+    </data>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/fragment_main_scene"
+        tools:context=".ui.main.PlaceholderFragment">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/coffee_cup" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ImageTittleEspresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_tittle_es"
+            android:text="@string/espresso_tittle"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textStyle="bold"
+            app:sizeTittleNameCoffee="@{viewModel.sizeOvalTittle}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageCountEspresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_count"
+            android:text="@{String.valueOf(viewModel.espressoLive)}"
+            app:sizeCountNameCoffee="@{viewModel.sizeOvalTittle}"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/ImageTittleEspresso"
+            app:layout_constraintTop_toTopOf="@id/ImageTittleEspresso" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageTittleDoppio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="120dp"
+            android:background="@drawable/background_tittle_do"
+            android:text="@string/doppio_tittle"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textStyle="bold"
+            app:sizeTittleNameCoffee="@{viewModel.sizeOvalTittle}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageCountDoppio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_count"
+            android:text="@{String.valueOf(viewModel.doppioLive)}"
+            app:sizeCountNameCoffee="@{viewModel.sizeOvalTittle}"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/imageTittleDoppio"
+            app:layout_constraintTop_toTopOf="@id/imageTittleDoppio" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageTittleAmericano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/background_tittle_am"
+            android:text="@string/americano_tittle"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textStyle="bold"
+            app:sizeTittleNameCoffee="@{viewModel.sizeOvalTittle}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageCountAmericano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_count"
+            android:text="@{String.valueOf(viewModel.americanoLive)}"
+            app:sizeCountNameCoffee="@{viewModel.sizeOvalTittle}"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/imageTittleAmericano"
+            app:layout_constraintTop_toTopOf="@id/imageTittleAmericano" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageTittleCappuchino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:layout_marginEnd="190dp"
+            android:background="@drawable/background_tittle_ca"
+            android:text="@string/cappuccino_tittle"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textStyle="bold"
+            app:sizeTittleNameCoffee="@{viewModel.sizeOvalTittle}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageCountCappuchino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_count"
+            android:text="@{String.valueOf(viewModel.cappuccinoLive)}"
+            app:sizeCountNameCoffee="@{viewModel.sizeOvalTittle}"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/imageTittleCappuchino"
+            app:layout_constraintTop_toTopOf="@id/imageTittleCappuchino" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageTittleLatte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="240dp"
+            android:background="@drawable/background_tittle_la"
+            android:text="@string/latte_tittle"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textStyle="bold"
+            app:sizeTittleNameCoffee="@{viewModel.sizeOvalTittle}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageCountLatte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_count"
+            android:text="@{String.valueOf(viewModel.latteLive)}"
+            app:sizeCountNameCoffee="@{viewModel.sizeOvalTittle}"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/imageTittleLatte"
+            app:layout_constraintTop_toTopOf="@id/imageTittleLatte" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageTittleRaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginBottom="160dp"
+            android:background="@drawable/background_tittle_ra"
+            android:text="@string/raf_tittle"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textStyle="bold"
+            app:sizeTittleNameCoffee="@{viewModel.sizeOvalTittle}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageCountRaf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_count"
+            android:text="@{String.valueOf(viewModel.rafLive)}"
+            app:sizeCountNameCoffee="@{viewModel.sizeOvalTittle}"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/imageTittleRaf"
+            app:layout_constraintTop_toTopOf="@id/imageTittleRaf" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageTittleMakiato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/background_tittle_ma"
+            android:text="@string/macchiato_tittle"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textStyle="bold"
+            app:sizeTittleNameCoffee="@{viewModel.sizeOvalTittle}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/imageCountMakiato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_count"
+            android:text="@{String.valueOf(viewModel.macchiatoLive)}"
+            app:sizeCountNameCoffee="@{viewModel.sizeOvalTittle}"
+            android:textSize="@dimen/start_size_count_text"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/imageTittleMakiato"
+            app:layout_constraintTop_toTopOf="@id/imageTittleMakiato" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:clickable="true"
+            android:focusable="true"
+            app:borderWidth="2dp"
+            android:src="@drawable/ic_menu_camera2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/espressoFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            android:backgroundTint="@android:color/holo_blue_light"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="@{() ->viewModel.writeCountToSharedPref(nameCoffee.ESPRESSO)}"/>
+
+        <TextView
+            android:id="@+id/textViewEspresso"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            android:text="@string/espresso"
+            android:textColor="@color/design_default_color_primary"
+            app:layout_constraintBottom_toBottomOf="@id/espressoFAB"
+            app:layout_constraintEnd_toEndOf="@id/espressoFAB" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/doppioFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            android:backgroundTint="@android:color/holo_green_light"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="@{() ->viewModel.writeCountToSharedPref(nameCoffee.DOPPIO)}"/>
+
+        <TextView
+            android:id="@+id/textViewDoppio"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            android:text="@string/doppio"
+            android:textColor="@color/design_default_color_primary"
+            app:layout_constraintBottom_toBottomOf="@id/doppioFAB"
+            app:layout_constraintEnd_toEndOf="@id/doppioFAB" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/americanoFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            android:backgroundTint="@android:color/holo_purple"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="@{() ->viewModel.writeCountToSharedPref(nameCoffee.AMERICANO)}"/>
+
+        <TextView
+            android:id="@+id/textViewAmericano"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            android:text="@string/americano"
+            android:textColor="@color/design_default_color_primary"
+            app:layout_constraintBottom_toBottomOf="@id/americanoFAB"
+            app:layout_constraintEnd_toEndOf="@id/americanoFAB" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/cappuccinoFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            android:backgroundTint="@android:color/darker_gray"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="@{() ->viewModel.writeCountToSharedPref(nameCoffee.CAPPUCCINO)}"/>
+
+        <TextView
+            android:id="@+id/textViewCappuccino"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            android:text="@string/cappuccino"
+            android:textColor="@color/design_default_color_primary"
+            app:layout_constraintBottom_toBottomOf="@id/cappuccinoFAB"
+            app:layout_constraintEnd_toEndOf="@id/cappuccinoFAB" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/latteFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            android:backgroundTint="@android:color/holo_orange_light"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="@{() ->viewModel.writeCountToSharedPref(nameCoffee.LATTE)}"/>
+
+        <TextView
+            android:id="@+id/textViewLatte"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            android:text="@string/latte"
+            android:textColor="@color/design_default_color_primary"
+            app:layout_constraintBottom_toBottomOf="@id/latteFAB"
+            app:layout_constraintEnd_toEndOf="@id/latteFAB" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/rafFAB"
+            android:layout_width="@dimen/size_small_FAB"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            android:backgroundTint="@android:color/holo_red_light"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="@{() ->viewModel.writeCountToSharedPref(nameCoffee.RAF)}"/>
+
+        <TextView
+            android:id="@+id/textViewRaf"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            android:text="@string/raf"
+            android:textColor="@color/design_default_color_primary"
+            app:layout_constraintBottom_toBottomOf="@id/rafFAB"
+            app:layout_constraintEnd_toEndOf="@id/rafFAB" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/macchiatoFAB"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="@dimen/margin_small_fab"
+            android:layout_marginBottom="@dimen/margin_small_fab"
+            android:text="@string/macchiato_tittle"
+            android:textAlignment="center"
+            android:background="@android:color/holo_orange_dark"
+            app:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="@{() ->viewModel.writeCountToSharedPref(nameCoffee.MACCHIATO)}"/>
+
+        <TextView
+            android:id="@+id/textViewMacchiato"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="0.0"
+            android:text="@string/macchiato"
+            android:textColor="@color/design_default_color_primary"
+            app:layout_constraintBottom_toBottomOf="@id/macchiatoFAB"
+            app:layout_constraintEnd_toEndOf="@id/macchiatoFAB" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            app:borderWidth="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_constraintBottom_toTopOf="@id/floatingActionButtonPhoto"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>

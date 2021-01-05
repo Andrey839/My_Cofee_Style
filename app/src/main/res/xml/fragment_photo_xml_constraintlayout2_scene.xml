@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/endPhoto"
+        motion:constraintSetStart="@id/startPhoto"
+        motion:duration="400">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/startPhoto">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/endPhoto">
+        <Constraint
+            android:id="@+id/floatingActionPhoto"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="64dp"
+            android:layout_marginEnd="@dimen/margin" />
+    </ConstraintSet>
+</MotionScene>

@@ -1,0 +1,69 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="size_tittle_name_coffee">24sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <!-- FAB -->
+    <dimen name="margin">16dp</dimen>
+    <dimen name="size_big_FAB">24dp</dimen>
+    <dimen name="size_small_FAB">45dp</dimen>
+    <dimen name="margin_small_fab">22dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+
+    <!-- Size oval when add count -->
+    <dimen name="start_tittle_text_size">40dp</dimen>
+    <dimen name="position_2">60dp</dimen>
+    <dimen name="position_3">90dp</dimen>
+    <dimen name="position_4">110dp</dimen>
+    <dimen name="position_5">130dp</dimen>
+    <dimen name="position_6">150dp</dimen>
+    <dimen name="position_7">180dp</dimen>
+
+    <!-- size text count -->
+    <dimen name="start_size_count_text">12sp</dimen>
+    <dimen name="size_count_2">17sp</dimen>
+    <dimen name="size_count_3">21sp</dimen>
+    <dimen name="size_count_4">24sp</dimen>
+    <dimen name="size_count_5">27sp</dimen>
+    <dimen name="size_count_6">30sp</dimen>
+    <dimen name="size_count_7">33sp</dimen>
+
+    <!-- size text tittle -->
+    <dimen name="start_size_tittle_text">8sp</dimen>
+    <dimen name="size_tittle_2">9sp</dimen>
+    <dimen name="size_tittle_3">11sp</dimen>
+    <dimen name="size_tittle_4">15sp</dimen>
+    <dimen name="size_tittle_5">18sp</dimen>
+    <dimen name="size_tittle_6">22sp</dimen>
+    <dimen name="size_tittle_7">26sp</dimen>
+
+    <!-- size oval count -->
+    <dimen name="size_oval_count_1">26sp</dimen>
+    <dimen name="size_oval_count_2">28sp</dimen>
+    <dimen name="size_oval_count_3">30sp</dimen>
+    <dimen name="size_oval_count_4">32sp</dimen>
+    <dimen name="size_oval_count_5">34sp</dimen>
+    <dimen name="size_oval_count_6">36sp</dimen>
+    <dimen name="size_oval_count_7">38sp</dimen>
+
+    <!-- registration -->
+    <dimen name="margin_top_parent">250sp</dimen>
+    <dimen name="margin_top">8sp</dimen>
+    <dimen name="margin_start">20sp</dimen>
+    <dimen name="margin_end">20sp</dimen>
+
+    <!-- recycler photo-->
+    <dimen name="small_size_tittle">13sp</dimen>
+    <dimen name="margin_start_tittle">5dp</dimen>
+    <dimen name="icon_size">30dp</dimen>
+    <dimen name="icon_small_size">20dp</dimen>
+
+    <!-- size snack bar -->
+    <dimen name="size_text_clicked">36sp</dimen>
+
+</resources>

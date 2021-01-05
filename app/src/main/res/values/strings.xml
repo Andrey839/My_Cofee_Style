@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">My Coffee Style</string>
+    <string name="tab_text_1">Количество выпитого кофе</string>
+    <string name="tab_text_2">Фото кофе</string>
+    <string name="tab_text_3">Где сделаны фото</string>
+    <string name="start_count">0</string>
+    <string name="auth_2.01">988095426385-92de7mj54aboa93n403sm8hd84opgp17.apps.googleusercontent.com</string>
+    <string name="permission_rationale">"Эти разрешения нужны для работы приложения"</string>
+    <string name="permission_rationale_sitting">"Для включения разрешений нужно вернуться в настройки"</string>
+    <string name="app_bar_text">Фото</string>
+    <string name="send_to">Передать в …</string>
+    <string name="exit_with_account">Выйти из аккаунта</string>
+
+
+    <!-- Name coffee -->
+    <string name="espresso">Espresso</string>
+    <string name="doppio">Doppio</string>
+    <string name="americano">Americano</string>
+    <string name="cappuccino">Cappuccino</string>
+    <string name="latte">Latte</string>
+    <string name="raf">Raf coffee</string>
+    <string name="macchiato">Macchiato</string>
+    <string name="espresso_tittle">ES</string>
+    <string name="doppio_tittle">DO</string>
+    <string name="americano_tittle">AM</string>
+    <string name="cappuccino_tittle">CA</string>
+    <string name="latte_tittle">LA</string>
+    <string name="raf_tittle">RA</string>
+    <string name="macchiato_tittle">MA</string>
+    <string name="large_text"></string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="registration">Регистрация</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_again">Password again</string>
+    <string name="action_sign_in">Вход или регистрация</string>
+    <string name="sign_in_google">Вход с помощью Google</string>
+    <string name="action_sign_in_short">Вход</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="registration_is_failed">"Registration is failed"</string>
+    <string name="invalid_email">Поле не должно быть пустым</string>
+    <string name="invalid_email_to">Не правильный Email</string>
+    <string name="invalid_password">Пароль должен быть больше > 6 символов</string>
+    <string name="password_again_failed">"Пароли не совпадают"</string>
+    <string name="title_activity_registration_main">RegistrationMainActivity</string>
+
+    <!-- dialog save photo -->
+    <string name="tittle_dialog">Сохранить фото?</string>
+    <string name="positive_button">Да</string>
+    <string name="negative_button">Нет</string>
+
+    <!-- snake bar -->
+    <string name="delete_photo">Удаление</string>
+    <string name="cancel">Отмена</string>
+
+</resources>
